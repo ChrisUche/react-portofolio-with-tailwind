@@ -16,9 +16,9 @@ export function Profile() {
     };
   
     return (
-      <div className="relative">
-        <div className={`text-center px-10 ${isMenuOpen ? 'transform -translate-y-7 opacity-80' : ''}`}>
-          <div className={`text-center px-10 ${isMenuOpen ? 'menu-open' : ''}`} style={{ transform: isMenuOpen ? 'translateY(-50%)' : '' }}>
+      <div className="">
+        <div >
+          <div className={`text-center px-10 ${isMenuOpen ? 'menu-open transition-all opacity-50' : ''}`} style={{ transform: isMenuOpen ? 'translateY(-50%)' : '' }}>
             <h2 className="text-5xl text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Nnamocha Uche Chris
             </h2>
@@ -39,19 +39,27 @@ export function Profile() {
         </div>
   
         <button
-          className={`z-20 absolute left-1/2 transform -translate-x-1/2 ${isMenuOpen ? '-translate-y-full' : 'bottom-10'} w-12 h-12 bg-[#802200] hover:bg-opacity-80 hover:scale-105 hover:ease-in px-[38px] py-[14px] rounded-lg text_font text-white`}
+          className={`z-20 absolute  left-1/2 bottom-8 transform -translate-x-1/2   ${isMenuOpen ? 'scale-95' : 'scale-100'} w-12 h-12 bg-[#802200] hover:bg-opacity-80 hover:scale-105 hover:ease-in  rounded-lg `}
           onClick={handleButtonClick}
         >
+           
         </button>
-  
+
+        <div className=' scale-90 transform -translate-y-3/4 ease-in delay-500 '>
+
         {isMenuOpen && (
-            <div className="bg-gray-200 p-6 rounded-t-md h-1/2 w-full transform -translate-y-56">
-              <h2 className="text-xl font-bold text-gray-800">Menu Item 1</h2>
-              <h2 className="text-xl font-bold text-gray-800">Menu Item 2</h2>
-              <h2 className="text-xl font-bold text-gray-800">Menu Item 3</h2>
+            <div className="flex justify-around bg-gray-200 p-6 rounded-t-md   transform -translate-y-56 scale-100 transition-all">
+              <div className='bg-slate-800 aspect-auto'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 1</h2></div>
+              <div className='bg-slate-800 w-28 h-28'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 2</h2></div>
+              <div className='bg-slate-800 w-28 h-28'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 3</h2></div>
+              <div className='bg-slate-800 w-28 h-28'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 4</h2></div>
+              <div className='bg-slate-800 w-28 h-28'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 5</h2></div>
+
             </div>
+            )}
+        </div>
           
-        )}
+        
       </div>
     );
   }

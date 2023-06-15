@@ -23,6 +23,7 @@ import { ServiceIntro } from "./components/homepage/ServiceIntro";
 import { ServiceBody } from "./components/homepage/ServiceBody";
 import PortfolioIntro from "./components/homepage/PortfolioIntro";
 import { PortfolioBody } from "./components/homepage/PortfolioBody";
+import { Dsec } from "./components/homepage/Dsec";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
