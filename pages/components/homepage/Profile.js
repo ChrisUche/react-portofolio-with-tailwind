@@ -10,6 +10,7 @@ import { useState } from 'react';
 
 export function Profile() {
     const [isMenuOpen, setMenuOpen] = useState(false);
+    
   
     const handleButtonClick = () => {
       setMenuOpen(!isMenuOpen);
@@ -18,7 +19,7 @@ export function Profile() {
     return (
       <div className="">
         <div >
-          <div className={`text-center px-10 ${isMenuOpen ? 'menu-open transition-all opacity-50' : ''}`} style={{ transform: isMenuOpen ? 'translateY(-50%)' : '' }}>
+          <div className={`text-center px-10 ${isMenuOpen ? 'menu-open transition-transform  opacity-50' : ''}`} style={{ transform: isMenuOpen ? 'translateY(-50%)' : '' }}>
             <h2 className="text-5xl text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Nnamocha Uche Chris
             </h2>
@@ -39,7 +40,7 @@ export function Profile() {
         </div>
   
         <button
-          className={`z-20 absolute  left-1/2 bottom-8 transform -translate-x-1/2   ${isMenuOpen ? 'scale-95' : 'scale-100'} w-12 h-12 bg-[#802200] hover:bg-opacity-80 hover:scale-105 hover:ease-in  rounded-lg `}
+          className={`z-20 absolute  left-1/2 bottom-8 transform -translate-x-1/2   ${isMenuOpen ? 'scale-90' : 'scale-100'} w-12 h-12 bg-[#802200] hover:bg-opacity-80 hover:scale-105 hover:ease-in  rounded-full `}
           onClick={handleButtonClick}
         >
            
@@ -48,7 +49,7 @@ export function Profile() {
         <div className=' scale-90 transform -translate-y-3/4 ease-in delay-500 '>
 
         {isMenuOpen && (
-            <div className="flex justify-around bg-gray-200 p-6 rounded-t-md   transform -translate-y-56 scale-100 transition-all">
+            <div className="flex justify-around bg-gray-200 p-6 rounded-t-md  transform -translate-y-56 scale-100 transition-all">
               <div className='bg-slate-800 aspect-auto'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 1</h2></div>
               <div className='bg-slate-800 w-28 h-28'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 2</h2></div>
               <div className='bg-slate-800 w-28 h-28'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 3</h2></div>
