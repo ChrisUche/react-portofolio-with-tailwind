@@ -4,10 +4,12 @@ import { useState } from "react";
 
 
 
-export function NavBar() {
+export default function NavBar() {
     const [darkMode, setDarkMode] = useState(false);
 
   return (
+    <div className={darkMode ? "dark" : ""}>
+
     <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="font-burtons text-xl">developedbychris</h1>
             <ul className="flex items-center">
@@ -27,6 +29,7 @@ export function NavBar() {
               </li>
             </ul>
           </nav>
+          </div>
   );
 };
 
