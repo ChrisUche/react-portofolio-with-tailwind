@@ -46,18 +46,19 @@ export function Profile() {
            
         </button>
 
+        <div className={` z-10 bg-gray-200 transform -translate-y-80 transition-transform 
+        ${isMenuOpen ? 'menu-open transform -translate-y-80 scale-100 opacity-100' : 'scale-90 transform -translate-y-72 opacity-50'} `}>
         {isMenuOpen  && ( 
-        <div className={` z-10 bg-gray-200 transform -translate-y-80 transition-transform delay-100 
-        ${isMenuOpen ? 'menu-open  scale-100' : 'scale-75'} `}>
             <div className='p-10'>
                 
                 <div className="flex justify-around  p-6 rounded-t-md gap-5 transition-all">
-                <div className='bg-slate-800 aspect-auto'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 1</h2></div>
+                <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 1</h2></div>
                 <div> <Image width={237}
-                        height={181} src={deved}   className=' ' /></div>
-                <div className='bg-slate-800 aspect-auto'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 3</h2></div>
-                <div className='bg-slate-800 aspect-auto'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 4</h2></div>
-                <div className='bg-slate-800 aspect-auto'> <Image width={237}
+                        height={181} src={deved}   className=' hover:cursor-pointer ' /></div>
+                <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 3</h2></div>
+                <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 4</h2></div>
+                <div className=' aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 4</h2>
+                    <Image width={237}
                         height={181} src={deved}   className=' ' /></div>
 
                 </div>
@@ -65,9 +66,9 @@ export function Profile() {
 
             </div>
 
-        </div>
-          
-          )}
+
+)}
+</div>
       </div>
     );
   }
