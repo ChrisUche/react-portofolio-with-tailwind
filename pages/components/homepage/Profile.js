@@ -7,6 +7,7 @@ import {
 import deved from "/public/dev-ed-wave.png";
 import Image from "next/image";
 import { useState } from 'react';
+import Link from 'next/link';
 
 export function Profile() {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -52,7 +53,9 @@ export function Profile() {
             <div className='p-10'>
                 
                 <div className="flex justify-around  p-6 rounded-t-md gap-5 transition-all">
-                <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 1</h2></div>
+                  <Link href={"/contact"}>
+                      <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Contact</h2></div>
+                  </Link>
                 <div> <Image width={237}
                         height={181} src={deved}   className=' hover:cursor-pointer ' /></div>
                 <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 3</h2></div>
