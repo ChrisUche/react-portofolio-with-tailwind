@@ -53,7 +53,7 @@ export function Profile() {
             <div className='p-10'>
                 
                 <div className="flex justify-around  p-6 rounded-t-md gap-5 transition-all">
-                  <Link href={"/contact"}>
+                  <Link href="/menu">
                       <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Contact</h2></div>
                   </Link>
                 <div> <Image width={237}
