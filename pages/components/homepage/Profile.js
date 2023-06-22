@@ -8,6 +8,7 @@ import deved from "/public/dev-ed-wave.png";
 import Image from "next/image";
 import { useState } from 'react';
 import Link from 'next/link';
+import { motion as m } from "framer-motion";
 
 export function Profile() {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -18,12 +19,19 @@ export function Profile() {
     };
   
     return (
-      <div className="">
+      <m.div className="">
         <div >
           <div className={`text-center z-20 px-10 transition-transform md:px-20 ${isMenuOpen ? 'menu-open  opacity-50' : ''}`} style={{ transform: isMenuOpen ? 'translateY(-50%)' : '' }}>
-            <h2 className="text-5xl text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Nnamocha Uche Chris
-            </h2>
+            <div className='overflow-hidden'>
+              <m.h2 
+                animate={{y:0}}
+                initial={{y: "100%"}} 
+                transition={{delay: 0.75, duration: 0.5}}
+                className="text-5xl text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+                Nnamocha Uche Chris
+              </m.h2>
+            </div>
+            
             <h3 className="text-2xl dark:text-white md:text-3xl">Developer and designer.</h3>
             <p className="text-md leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Freelancer providing services for programming and design content needs. Join me down below and let's get
@@ -53,13 +61,13 @@ export function Profile() {
             <div className='p-10'>
                 
                 <div className="flex justify-around  p-6 rounded-t-md gap-5 transition-all">
-                  <Link href="/menu">
-                      <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Contact</h2></div>
+                  <Link href="/Contact">
+                      <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Home</h2></div>
                   </Link>
                 <div> <Image width={237}
-                        height={181} src={deved}   className=' hover:cursor-pointer ' /></div>
-                <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 3</h2></div>
-                <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 4</h2></div>
+                        height={181} src={deved}   className=' hover:cursor-pointer ' />Work</div>
+                <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">About</h2></div>
+                <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Contact</h2></div>
                 <div className=' aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 4</h2>
                     <Image width={237}
                         height={181} src={deved}   className=' ' /></div>
@@ -72,7 +80,7 @@ export function Profile() {
 
 )}
 </div>
-      </div>
+      </m.div>
     );
   }
   

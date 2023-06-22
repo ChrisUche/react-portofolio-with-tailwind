@@ -11,7 +11,9 @@ export default function NavBar() {
   return (
     
     <nav className="p-10  md:px-20 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">developedbyed</h1>
+            <Link href="/">
+              <h1 className="font-burtons text-xl cursor-pointer">developedbyed</h1>
+            </Link>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
