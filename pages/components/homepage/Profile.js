@@ -61,13 +61,19 @@ export function Profile() {
             <div className='p-10'>
                 
                 <div className="flex justify-around  p-6 rounded-t-md gap-5 transition-all">
-                  <Link href="/Contact">
+                  <Link href="/">
                       <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Home</h2></div>
                   </Link>
-                <div> <Image width={237}
-                        height={181} src={deved}   className=' hover:cursor-pointer ' />Work</div>
-                <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">About</h2></div>
-                <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Contact</h2></div>
+                  <Link href="Project">
+                      <div> <Image width={237}
+                              height={181} src={deved}   className=' hover:cursor-pointer ' />Work</div>
+                  </Link>
+                  <Link href="/About">
+                      <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">About</h2></div>
+                  </Link>
+                  <Link href="/">
+                      <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Contact</h2></div>
+                  </Link>
                 <div className=' aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 4</h2>
                     <Image width={237}
                         height={181} src={deved}   className=' ' /></div>
