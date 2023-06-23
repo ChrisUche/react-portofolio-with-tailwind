@@ -8,9 +8,10 @@ import { motion as m } from "framer-motion";
 const ContactPage = () => {
   return (
     <m.main
-    initial={{y: "100%"}} 
-    animate={{y: "0%"}} 
-     transition={{duration:1, ease: "easeOut"}}
+      initial={{y: "100%", opacity:0}} 
+      animate={{y:0, opacity:1}}
+      exit={{opacity:0}}
+      transition={{duration: 2, ease:"easeOut"}}
      className=" bg-slate-800 dark:bg-gray-900  ">
         <section className="min-h-screen">
 

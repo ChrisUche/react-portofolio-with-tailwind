@@ -53,3 +53,50 @@ export function ServiceBody() {
           </div>
   );
 };
+
+// import { useState } from 'react';
+
+// export function ServiceBody() {
+//   const [mouseX, setMouseX] = useState(0);
+//   const [mouseY, setMouseY] = useState(0);
+
+//   const handleMouseMove = (e) => {
+//     const rect = e.target.getBoundingClientRect();
+//     const x = e.clientX - rect.left;
+//     const y = e.clientY - rect.top;
+
+//     setMouseX(x);
+//     setMouseY(y);
+//   };
+
+//   return (
+//     <div className="bg-black h-screen flex items-center justify-center">
+//       <div className="flex flex-wrap gap-8 max-w-screen-lg w-full" id="cards" onMouseMove={handleMouseMove}>
+//         <div className="bg-slate-700 h-60 w-72 rounded-md cursor-pointer relative">
+//           <div className="hover:opacity-100"></div>
+//           <div className="card-content"></div>
+//         </div>
+//         <div className="bg-slate-700 h-60 w-72 rounded-md cursor-pointer relative">
+//           <div className="hover:opacity-100"></div>
+//           <div className="card-content"></div>
+//         </div>
+//         <div className="bg-slate-700 h-60 w-72 rounded-md cursor-pointer relative">
+//           <div className="hover:opacity-100"></div>
+//           <div className="card-content"></div>
+//         </div>
+//         <div className="bg-slate-700 h-60 w-72 rounded-md cursor-pointer relative">
+//           <div className="hover:opacity-100"></div>
+//           <div className="card-content"></div>
+//         </div>
+//         <div className="bg-slate-700 h-60 w-72 rounded-md cursor-pointer relative">
+//           <div className="hover:opacity-100"></div>
+//           <div className="card-content"></div>
+//         </div>
+//         <div className="bg-slate-700 h-60 w-72 rounded-md cursor-pointer relative">
+//           <div className="hover:opacity-100"></div>
+//           <div className="card-content"></div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }

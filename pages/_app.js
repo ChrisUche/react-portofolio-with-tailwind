@@ -5,7 +5,7 @@ import NavBar from './components/homepage/NavBar'
 function MyApp({ Component, pageProps, router }) {
   return (<>
       <NavBar />
-      <AnimatePresence initial={false}>
+      <AnimatePresence >
         <Component key={router.pathname} {...pageProps} />
       </AnimatePresence>
   </>

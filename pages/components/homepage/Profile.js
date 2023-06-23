@@ -71,7 +71,7 @@ export function Profile() {
                   <Link href="/About">
                       <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">About</h2></div>
                   </Link>
-                  <Link href="/">
+                  <Link href="/Contact">
                       <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Contact</h2></div>
                   </Link>
                 <div className=' aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 4</h2>
