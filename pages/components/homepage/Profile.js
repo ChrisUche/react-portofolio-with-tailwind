@@ -76,7 +76,7 @@ export function Profile() {
                   </Link>
                 <div className=' aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 4</h2>
                     <Image width={237}
-                        height={181} src={deved}   className=' ' /></div>
+                        height={181} src={deved}   className='' /></div>
 
                 </div>
                 
