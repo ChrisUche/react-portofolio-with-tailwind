@@ -10,7 +10,7 @@ export default function NavBar() {
 
   return (
     
-    <nav className="p-10  md:px-20 flex justify-between dark:text-white">
+    <nav className="p-10  md:px-20 flex bg-transparent  z-50 w-full justify-between dark:text-white">
             <Link href="/">
               <h1 className="font-burtons text-xl cursor-pointer">developedbyed</h1>
             </Link>

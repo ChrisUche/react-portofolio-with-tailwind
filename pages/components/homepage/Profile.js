@@ -21,7 +21,7 @@ export function Profile() {
     return (
       <m.div className="">
         <div >
-          <div className={`text-center z-20 px-10 transition-transform md:px-20 ${isMenuOpen ? 'menu-open  opacity-50' : ''}`} style={{ transform: isMenuOpen ? 'translateY(-50%)' : '' }}>
+          <div className={`text-center px-10 relative transition-transform md:px-20 ${isMenuOpen ? 'menu-open  opacity-50' : ''}`} style={{ transform: isMenuOpen ? 'translateY(-50%)' : '' }} >
             <div className='overflow-hidden'>
               <m.h2 
                 animate={{y:0}}
@@ -49,15 +49,15 @@ export function Profile() {
         </div>
   
         <button
-          className={`z-30 shadow-zinc-900 absolute  left-1/2 bottom-8 transform -translate-x-1/2 transition-transform ${isMenuOpen ? 'scale-90' : 'scale-100'} w-12 h-12 bg-[#802200] hover:bg-opacity-80 hover:scale-105 hover:ease-in active:scale-75 md:w-20 md:h-20 rounded-full `}
+          className={`z-30 shadow-zinc-900  fixed  left-1/2 bottom-8 transform -translate-x-1/2 transition-transform ${isMenuOpen ? 'scale-90' : 'scale-100'} w-12 h-12 bg-[#802200] hover:bg-opacity-80 hover:scale-105 hover:ease-in active:scale-75  md:w-20 md:h-20 rounded-full `}
           onClick={handleButtonClick}
         >
            
         </button>
 
-        <div className={` z-10 bg-gray-200 transform -translate-y-80 transition-transform 
-        ${isMenuOpen ? 'menu-open transform -translate-y-80 scale-100 opacity-100' : 'scale-90 transform -translate-y-72 opacity-50'} `}>
-        {isMenuOpen  && ( 
+        <div className={` z-10 absolute w-full bg-gray-200 transform -translate-y-80 transition-transform 
+          ${isMenuOpen ? 'menu-open transform -translate-y-80 scale-100 opacity-100' : 'scale-90 transform -translate-y-72 opacity-50'} `}>
+          {isMenuOpen  && ( 
             <div className='p-10'>
                 
                 <div className="flex justify-around  p-6 rounded-t-md gap-5 transition-all">
@@ -84,8 +84,8 @@ export function Profile() {
             </div>
 
 
-)}
-</div>
+          )}
+        </div>
       </m.div>
     );
   }

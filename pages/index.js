@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" bg-white dark:bg-gray-900  ">
-        <section className="min-h-screen">
+        <section className="">
 
           
           {/* <nav className="p-10  md:px-20 flex justify-between dark:text-white">
