@@ -16,7 +16,7 @@ export function PortfolioBody() {
       animate={{y:0, opacity:1}}
       exit={{opacity:0}}
       transition={{duration: 2, ease:"easeOut"}}
-      className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+      className="flex flex-col gap-10 py-10 px-16 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
               <Image
                 className="rounded-lg object-cover"

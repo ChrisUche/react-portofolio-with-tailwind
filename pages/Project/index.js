@@ -16,7 +16,7 @@ const Project = () => {
     };
   return (
     <>
-    <div className='px-16'>
+    <div className=''>
       <div className={`absolute ${isMenuOpen ? 'menu-open  opacity-50' : ''}`} style={{ transform: isMenuOpen ? '' : '' }}>
         <PortfolioIntro />
         <PortfolioBody />
@@ -24,10 +24,12 @@ const Project = () => {
       
         <m.button
         initial={{y: "100%", opacity:0}} 
-        animate={{y:0, opacity:1}}
+        animate={{y:0, opacity:1, scale: [, isMenuOpen ? 0.90 : 1] }}
         exit={{opacity:0}}
         transition={{duration: 2, ease:"easeOut"}}
-          className={`z-30 shadow-zinc-900  fixed  left-1/2 bottom-8 transform -translate-x-1/2 transition-transform ${isMenuOpen ? 'scale-90' : 'scale-100'} w-12 h-12 bg-[#802200] hover:bg-opacity-80 hover:scale-105 hover:ease-in active:scale-75  md:w-20 md:h-20 rounded-full `}
+        whileHover={{ scale: 1.1, transition: { duration: 0, ease:"easeInOut" } }}
+        
+        className={`z-30 shadow-zinc-900  fixed  left-1/2  bottom-8 transform  transition-transform  w-12 h-12 bg-[#802200] hover:bg-opacity-80 hover:ease-in  md:w-20 md:h-20 rounded-full `}
           onClick={handleButtonClick}
         >
            
