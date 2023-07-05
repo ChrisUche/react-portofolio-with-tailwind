@@ -1,5 +1,7 @@
 import { useState, useRef } from 'react'
 import { motion as m } from "framer-motion";
+import EarthCanvas from './EarthCanvas';
+import { slideIn } from '../../utils/motion';
 // import  emailjs  from "@emailjs/browser";
 
 
@@ -19,7 +21,8 @@ const Contact = () => {
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
        <m.div
-       className='flex-[0.75] bg-slate-400 p-8 rounded-2xl'
+         variants={slideIn('left', "tween", 0.2, 1)}
+         className='flex-[0.75] bg-slate-400 p-8 rounded-2xl'
         >
             <p className='text-white font-serif'>Get in touch</p>
             <h3 className='text-white font-extrabold text-3xl'>Contact.</h3>
@@ -79,9 +82,10 @@ const Contact = () => {
             </form>
        </m.div>
        <m.div
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+            variants={slideIn('right', "tween", 0.2, 1)}
+            className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
        >
-        
+        <EarthCanvas />
        </m.div>
     </div>
   )
