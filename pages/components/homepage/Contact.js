@@ -20,7 +20,6 @@ const Contact = () => {
     });
 
     const handleChange = (e) => {
-        const  target  = e;
         const { name, value } = e.target;
 
         setForm({ ...form, [name]: value });

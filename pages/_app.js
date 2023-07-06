@@ -11,7 +11,6 @@ import NavBar from './components/homepage/NavBar'
 
 function MyApp({ Component, pageProps, router }) {
  // const [isMenuOpen, setMenuOpen] = useState(false);
-//  const router = useRouter();
 
 //  const handleLinkClick = () => {
 //    setMenuOpen(false);
@@ -42,7 +41,7 @@ function MyApp({ Component, pageProps, router }) {
           
           exit={{opacity:0}}
          className={` z-10 fixed inset-0 items-center justify-center  w-full  transition-transform 
-          ${isMenuOpen ? 'menu-open flex items-center justify-center text-center' : 'scale-90 transform -translate-y-72 opacity-50'} `}>
+          ${isMenuOpen ? 'menu-open flex items-center justify-center text-center' : 'scale-0 transform -translate-y-72 opacity-50'} `}>
           {isMenuOpen  && ( 
             <div className='p-10'>
                 
