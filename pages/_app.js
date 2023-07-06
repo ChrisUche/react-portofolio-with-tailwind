@@ -6,11 +6,16 @@ import NavBar from './components/homepage/NavBar'
 //import Link from 'next/link';
 //import deved from "/public/dev-ed-wave.png";
 //import Image from "next/image";
+// import { useRouter } from 'next/router';
 
 
 function MyApp({ Component, pageProps, router }) {
  // const [isMenuOpen, setMenuOpen] = useState(false);
-    
+//  const router = useRouter();
+
+//  const handleLinkClick = () => {
+//    setMenuOpen(false);
+//  };
   
     // const handleButtonClick = () => {
     //   setMenuOpen(!isMenuOpen);
@@ -42,18 +47,18 @@ function MyApp({ Component, pageProps, router }) {
             <div className='p-10'>
                 
                 <div className="flex justify-around  p-6 rounded-t-md gap-5 transition-all">
-                  <Link href="/">
-                      <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Home</h2></div>
+                  <Link href="/" passHref>
+                      <div className='bg-slate-800 aspect-auto hover:cursor-pointer' onClick={handleLinkClick}> <h2 className="text-xl font-bold text-yellow-400">Home</h2></div>
                   </Link>
-                  <Link href="Project">
-                      <div> <Image width={237}
+                  <Link href="Project" passHref>
+                      <div onClick={handleLinkClick}> <Image width={237}
                               height={181} src={deved}   className=' hover:cursor-pointer ' />Work</div>
                   </Link>
-                  <Link href="/About">
-                      <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">About</h2></div>
+                  <Link href="/About" passHref>
+                      <div className='bg-slate-800 aspect-auto hover:cursor-pointer' onClick={handleLinkClick}> <h2 className="text-xl font-bold text-yellow-400">About</h2></div>
                   </Link>
-                  <Link href="/Contact">
-                      <div className='bg-slate-800 aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Contact</h2></div>
+                  <Link href="/Contact" passHref>
+                      <div className='bg-slate-800 aspect-auto hover:cursor-pointer' onClick={handleLinkClick}> <h2 className="text-xl font-bold text-yellow-400">Contact</h2></div>
                   </Link>
                 <div className=' aspect-auto hover:cursor-pointer'> <h2 className="text-xl font-bold text-yellow-400">Menu Item 4</h2>
                     <Image width={237}
