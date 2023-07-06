@@ -2,7 +2,12 @@ import { useState, useRef } from 'react'
 import { motion as m } from "framer-motion";
 import EarthCanvas from './EarthCanvas';
 import { slideIn } from '../../utils/motion';
-// import  emailjs  from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
+
+
+// template_wymcfs5
+// service_nc9fact
+// lb0BeVNQonrITBkNJ
 
 
 const Contact = () => {
@@ -14,15 +19,52 @@ const Contact = () => {
         message: '',
     });
 
-    const handleChange = (e) => {}
+    const handleChange = (e) => {
+        const  target  = e;
+        const { name, value } = e.target;
 
-    const handleSubmit = (e) => {}
+        setForm({ ...form, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setLoading(true)
+
+        emailjs.send(
+            'service_nc9fact',
+            'template_wymcfs5',
+            {
+                from_name: form.name,
+                to_name: 'Chris',
+                from_email: form.email,
+                to_name: 'chrisuchennamocha58@gmail.com',
+                message: form.message,
+            },
+            'lb0BeVNQonrITBkNJ'
+            )
+            .then(() => {
+                setLoading(false);
+                alert('Thank you. I will get back to you as soon as possible.');
+
+                setForm({
+                    name: '',
+                    email: '',
+                    message: '',
+                })
+            }, (error) => {
+                setLoading(false)
+
+                console.error(error);
+
+                alert('oops, Something went wrong!')
+            })
+    }
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className='xl:flex-row relative flex-col-reverse flex gap-10 overflow-hidden'>
        <m.div
          variants={slideIn('left', "tween", 0.2, 1)}
-         className='flex-[0.75] bg-slate-400 p-8 rounded-2xl'
+         className='flex-[0.75] bg-blue-400 p-8 rounded-2xl'
         >
             <p className='text-white font-serif'>Get in touch</p>
             <h3 className='text-white font-extrabold text-3xl'>Contact.</h3>
@@ -60,7 +102,7 @@ const Contact = () => {
                 </label>
                 <label className='flex flex-col'>
                     <span className='text-white font-medium mb-4'>
-                        Your mMssage
+                        Your Mssage
                     </span>
                     <textarea
                         rows='7'
