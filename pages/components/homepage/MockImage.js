@@ -1,4 +1,5 @@
 import deved from "/public/dev-ed-wave.png";
+import about from "/public/about.png";
 
 export const data = [
   {
@@ -16,7 +17,7 @@ export const data = [
   {
     id: 3,
     name: 'About',
-    img: deved,
+    img: about,
     link: "/About"
   },
   {
@@ -27,9 +28,9 @@ export const data = [
   },
   {
     id: 5,
-    name: 'ttr',
+    name: 'Experience',
     img: deved,
-    link: "/"
+    link: "https://3dplane-chrisuche.vercel.app/"
   },
   
 ];

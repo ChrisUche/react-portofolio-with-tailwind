@@ -75,19 +75,36 @@ useEffect(() => {
                 id='slider' 
                 className='flex justify-around  rounded-t-md gap-5 transition-all w-full h-full overflow-hidden '>
                 {data.map((item) => (
-                  <Link href={item.link} key={item.id} >
-                    <div  className='bg-slate-800 w-[280px]' onClick={handleLinkClick}>
+                // Use the conditional check to open "Experience" link in a new tab
+                <div className='bg-gray-300 w-[280px] relative rounded-md' key={item.id}>
+                  <div className="text-center pt-2">
+                    <p className="text-lg font-bold">{item.name}</p>
+                  </div>
+                  {item.link === "https://3dplane-chrisuche.vercel.app/" ? (
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
                       <Image
                         width={237}
                         height={181}
                         src={item.img}
-                        className=' hover:scale-105 duration-300 cursor-pointer ease-in-out '
+                        className='hover:scale-105 duration-300 cursor-pointer ease-in-out rounded-md'
                         alt=''
                       />
-                      {item.name}
-                    </div>
-                  </Link>
-                ))}
+                    </a>
+                  ) : (
+                    <Link href={item.link}>
+                      <a onClick={handleLinkClick}>
+                        <Image
+                          width={277}
+                          height={181}
+                          src={item.img}
+                          className='hover:scale-105 duration-300 cursor-pointer ease-in-out rounded-sm'
+                          alt=''
+                        />
+                      </a>
+                    </Link>
+                  )}
+                </div>
+              ))}
               </m.div>
               {/* <MdChevronRight onClick={slideRight} size={40} className='z-30' /> */}
             </m.div>
