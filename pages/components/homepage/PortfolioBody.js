@@ -7,6 +7,7 @@ import web4 from "/public/web4.png";
 import web5 from "/public/web5.png";
 import web6 from "/public/web6.png";
 import { motion as m } from "framer-motion";
+import Link from 'next/link';
 
 
 export function PortfolioBody() {
@@ -17,7 +18,8 @@ export function PortfolioBody() {
       exit={{opacity:0}}
       transition={{duration: 2, ease:"easeOut"}}
       className="flex flex-col gap-10 py-10 px-16 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
+          <Link href={"https://carshowcase-ox6b.vercel.app/"}>
+          <div className="basis-1/3 flex-1 ">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -26,6 +28,8 @@ export function PortfolioBody() {
                 src={web1}
               />
             </div>
+          </Link>
+            
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"

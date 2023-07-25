@@ -8,6 +8,8 @@ import { useRouter } from 'next/router';
 import { MdChevronLeft, MdChevronRight} from 'react-icons/md';
 import { data } from './components/homepage/MockImage';
 import React, { useEffect, useRef, useState } from 'react'
+import Drawer from 'react-modern-drawer';
+import 'react-modern-drawer/dist/index.css';
 
 
 function MyApp({ Component, pageProps, router }) {
@@ -45,19 +47,20 @@ useEffect(() => {
         <Component key={router.pathname} {...pageProps} />
       </AnimatePresence>
       </div>
-      <m.button
-        initial={{y: "100%", opacity:0}} 
-        animate={{y:0, opacity:1, scale: [, isMenuOpen ? 0.90 : 1] }}
-        exit={{opacity:0}}
-        transition={{duration: 2, ease:"easeOut"}}
-        whileHover={{ scale: 1.1, transition: { duration: 0, ease:"easeInOut" } }}
-        
-        className={`z-30 shadow-zinc-900  fixed  left-1/2  bottom-8 transform  transition-transform  w-12 h-12 bg-[#802200] hover:bg-opacity-80 hover:ease-in  md:w-20 md:h-20 rounded-full `}
+      <m.div className="flex flex-col justify-end items-center">
+        <m.button
+          initial={{ y: "100%", opacity: 0 }}
+          animate={{ y: 0, opacity: 1, scale: [, isMenuOpen ? 0.90 : 1] }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 2, ease: "easeOut" }}
+          whileHover={{ scale: 1.1, transition: { duration: 0, ease: "easeInOut" } }}
+          className={`z-30 shadow-zinc-900 fixed bottom-8 transform transition-transform w-12 h-12 bg-[#802200] hover:bg-opacity-80 hover:ease-in md:w-20 md:h-20 rounded-full`}
           onClick={handleButtonClick}
         >
-           
         </m.button>
+      </m.div>
 
+      <Drawer className=' overflow-hidden flex z-10' open={isMenuOpen} onClose={handleButtonClick} direction='top'>
         <m.div
           exit={{ opacity: 0 }}
           className={` z-10 fixed inset-0 items-center justify-center  w-full  transition-transform ${
@@ -71,7 +74,7 @@ useEffect(() => {
               {/* <MdChevronLeft onClick={slideLeft} size={40} className='z-30'/> */}
               <m.div 
                 drag="x" 
-                dragConstraints={{ right:700, left: -800 }}
+                dragConstraints={{ right:540, left: -650 }}
                 id='slider' 
                 className='flex justify-around  rounded-t-md gap-5 transition-all w-full h-full overflow-hidden '>
                 {data.map((item) => (
@@ -110,6 +113,7 @@ useEffect(() => {
             </m.div>
           )}
         </m.div>
+        </Drawer>
   </>
       
     )
