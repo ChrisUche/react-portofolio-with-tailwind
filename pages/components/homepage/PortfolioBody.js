@@ -19,7 +19,17 @@ export function PortfolioBody() {
       className="flex flex-col gap-10 py-10 px-16 lg:flex-row lg:flex-wrap"
     >
       <Link href={'https://carshowcase-ox6b.vercel.app/'}>
-        <div className="basis-1/3 flex-1 ">
+        <div className="basis-1/3 relative flex-1 hover:cursor-pointer">
+          <div className="flex z-10 absolute justify-between mb-1 hover:cursor-pointer">
+            <button className='bg-green-600 rounded-md p-2 '>
+              View site
+            </button>
+            <button className='bg-amber-300 rounded-md p-2 '>
+              Code repo
+            </button>
+          </div>
+        
+
           <Image
             className="rounded-lg object-cover"
             width={'100%'}
@@ -31,7 +41,7 @@ export function PortfolioBody() {
         </div>
       </Link>
 
-      <div className="basis-1/3 flex-1">
+      <div className="basis-1/3 flex-1 hover:cursor-pointer">
         <Image
           className="rounded-lg object-cover"
           width={'100%'}
@@ -41,7 +51,7 @@ export function PortfolioBody() {
           alt=""
         />
       </div>
-      <div className="basis-1/3 flex-1">
+      <div className="basis-1/3 flex-1 hover:cursor-pointer">
         <Image
           className="rounded-lg object-cover"
           width={'100%'}
@@ -51,7 +61,7 @@ export function PortfolioBody() {
           alt=""
         />
       </div>
-      <div className="basis-1/3 flex-1">
+      <div className="basis-1/3 flex-1 hover:cursor-pointer">
         <Image
           className="rounded-lg object-cover"
           width={'100%'}
@@ -61,7 +71,7 @@ export function PortfolioBody() {
           alt=""
         />
       </div>
-      <div className="basis-1/3 flex-1">
+      <div className="basis-1/3 flex-1 hover:cursor-pointer">
         <Image
           className="rounded-lg object-cover"
           width={'100%'}
@@ -71,7 +81,7 @@ export function PortfolioBody() {
           alt=""
         />
       </div>
-      <div className="basis-1/3 flex-1">
+      <div className="basis-1/3 flex-1 hover:cursor-pointer">
         <Image
           className="rounded-lg object-cover"
           width={'100%'}
