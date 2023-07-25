@@ -12,15 +12,16 @@ export default function NavBar() {
     
     <nav className="p-10  md:px-20 flex bg-transparent  z-50 w-full justify-between dark:text-white">
             <Link href="/">
-              <h1 className="font-burtons text-xl cursor-pointer">developedbyed</h1>
+              <h1 className="font-burtons text-xl cursor-pointer">developedbychris</h1>
             </Link>
             <ul className="flex items-center">
-              <li>
+              {/* darkmode */}
+              {/* <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className=" cursor-pointer text-2xl"
                 />
-              </li>
+              </li> */}
               <Link href="/">
                 <li>
                   <a
