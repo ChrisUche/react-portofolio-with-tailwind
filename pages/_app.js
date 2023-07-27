@@ -9,7 +9,7 @@ import { MdChevronLeft, MdChevronRight} from 'react-icons/md';
 import React, { useEffect, useRef, useState } from 'react'
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
-import Data from './components/homepage/MockImage';
+import Data from './components/homepage/Data';
 
 
 function MyApp({ Component, pageProps, router }) {
