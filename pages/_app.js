@@ -77,7 +77,7 @@ useEffect(() => {
                 dragConstraints={{ right:540, left: -650 }}
                 id='slider' 
                 className='flex justify-around  rounded-t-md gap-5 transition-all w-full h-full overflow-hidden '>
-                {/* {data.map((item) => (
+                {data.map((item) => (
                 // Use the conditional check to open "Experience" link in a new tab
                 <div className='bg-gray-300 w-[280px] relative rounded-md' key={item.id}>
                   <div className="text-center pt-2">
@@ -107,7 +107,7 @@ useEffect(() => {
                     </Link>
                   )}
                 </div>
-              ))} */}
+              ))}
               </m.div>
               {/* <MdChevronRight onClick={slideRight} size={40} className='z-30' /> */}
             </m.div>
