@@ -9,7 +9,8 @@ import { MdChevronLeft, MdChevronRight} from 'react-icons/md';
 import React, { useEffect, useRef, useState } from 'react'
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
-import Data from './components/homepage/Data';
+import deved from "/public/dev-ed-wave.png";
+import about from "/public/about.png";
 
 
 function MyApp({ Component, pageProps, router }) {
@@ -40,6 +41,40 @@ useEffect(() => {
   //   var slider = document.getElementById('slider');
   //   slider.scrollLeft = slider.scrollLeft + 500;
   // };
+
+  
+const data = [
+  {
+    id: 1,
+    name: 'Home',
+    img: deved,
+    link: "/"
+  },
+  {
+    id: 2,
+    name: 'Work',
+    img: deved,
+    link: "/Project"
+  },
+  {
+    id: 3,
+    name: 'About',
+    img: about,
+    link: "/About"
+  },
+  {
+    id: 4,
+    name: 'Contact',
+    img: deved,
+    link: "/Contact"
+  },
+  {
+    id: 5,
+    name: 'Experience',
+    img: deved,
+    link: "https://3dplane-chrisuche.vercel.app/"
+  },
+];
   return (<>
       <NavBar />
       <div className={` ${isMenuOpen ? 'menu-open opacity-50' : ''}`} style={{ transform: isMenuOpen ? '' : '' }}>
@@ -77,7 +112,7 @@ useEffect(() => {
                 dragConstraints={{ right:540, left: -650 }}
                 id='slider' 
                 className='flex justify-around  rounded-t-md gap-5 transition-all w-full h-full overflow-hidden '>
-                {Data.map((item) => (
+                {data.map((item) => (
                 // Use the conditional check to open "Experience" link in a new tab
                 <div className='bg-gray-300 w-[280px] relative rounded-md' key={item.id}>
                   <div className="text-center pt-2">
