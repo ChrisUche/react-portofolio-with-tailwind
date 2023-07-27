@@ -9,7 +9,7 @@ import { MdChevronLeft, MdChevronRight} from 'react-icons/md';
 import React, { useEffect, useRef, useState } from 'react'
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
-import data from './components/homepage/MockImage';
+import Data from './components/homepage/MockImage';
 
 
 function MyApp({ Component, pageProps, router }) {
@@ -77,7 +77,7 @@ useEffect(() => {
                 dragConstraints={{ right:540, left: -650 }}
                 id='slider' 
                 className='flex justify-around  rounded-t-md gap-5 transition-all w-full h-full overflow-hidden '>
-                {data.map((item) => (
+                {Data.map((item) => (
                 // Use the conditional check to open "Experience" link in a new tab
                 <div className='bg-gray-300 w-[280px] relative rounded-md' key={item.id}>
                   <div className="text-center pt-2">
