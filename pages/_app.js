@@ -6,10 +6,10 @@ import Link from 'next/link';
 import Image from "next/image";
 import { useRouter } from 'next/router';
 import { MdChevronLeft, MdChevronRight} from 'react-icons/md';
-import { data } from './components/homepage/MockImage';
 import React, { useEffect, useRef, useState } from 'react'
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
+import data from './components/homepage/MockImage';
 
 
 function MyApp({ Component, pageProps, router }) {

@@ -1,7 +1,7 @@
 import deved from "/public/dev-ed-wave.png";
 import about from "/public/about.png";
 
-export const data = [
+const data = [
   {
     id: 1,
     name: 'Home',
