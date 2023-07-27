@@ -32,7 +32,6 @@ const data = [
     img: deved,
     link: "https://3dplane-chrisuche.vercel.app/"
   },
-  
 ];
 
-export default data
+export default data;
