@@ -1,7 +1,9 @@
 import deved from "/public/dev-ed-wave.png";
 import about from "/public/about.png";
 
-const data = [
+import React from 'react';
+
+export const data = [
   {
     id: 1,
     name: 'Home',
@@ -34,4 +36,13 @@ const data = [
   },
 ];
 
-export default data;
+const MockImage = () => {
+  // Your component logic here
+  return (
+    // JSX for your component
+    
+    <div>MockImage Component</div>
+  );
+};
+
+export default MockImage;
