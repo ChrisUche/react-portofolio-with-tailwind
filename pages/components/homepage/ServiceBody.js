@@ -4,7 +4,7 @@ import code from '/public/code.png';
 import design from '/public/design.png';
 import consulting from '/public/consulting.png';
 
-export function ServiceBody() {
+export default function ServiceBody() {
   return (
     <div className="lg:flex gap-10">
       <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">

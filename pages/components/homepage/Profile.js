@@ -10,7 +10,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion as m } from 'framer-motion';
 
-export function Profile() {
+export default function Profile() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const handleButtonClick = () => {

@@ -9,7 +9,7 @@ import web6 from '/public/web6.png';
 import { motion as m } from 'framer-motion';
 import Link from 'next/link';
 
-export function PortfolioBody() {
+export default function PortfolioBody() {
   return (
     <m.div
       initial={{ y: '100%', opacity: 0 }}

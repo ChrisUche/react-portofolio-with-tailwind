@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function ServiceIntro() {
+export default function ServiceIntro() {
   return (
     <div>
       <h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>

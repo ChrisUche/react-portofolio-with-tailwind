@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion as m } from 'framer-motion';
 
-export function PortfolioIntro() {
+export default function PortfolioIntro() {
   return (
     <m.div
       initial={{ y: '100%', opacity: 0 }}

@@ -3,7 +3,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import Link from "next/link";
 import { motion as m } from "framer-motion";
-import { Profile } from "./components/homepage/Profile";
+import Profile from "./components/homepage/Profile";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -45,7 +45,7 @@ export default function Home() {
               
             </ul>
           </nav> */}
-          <Profile/>
+          <Profile />
          
         </section>
         {/* <section>

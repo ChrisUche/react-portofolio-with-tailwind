@@ -1,6 +1,6 @@
 import React from 'react'
-import { ServiceBody } from '../components/homepage/ServiceBody';
-import { ServiceIntro } from '../components/homepage/ServiceIntro';
+import  ServiceBody  from '../components/homepage/ServiceBody';
+import  ServiceIntro  from '../components/homepage/ServiceIntro';
 import { motion as m } from "framer-motion";
 
 

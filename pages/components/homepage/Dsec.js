@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 
-export  function Dsec() {
+export default function Dsec() {
     const [isMenuOpen, setMenuOpen] = useState(false);
   
     const handleButtonClick = () => {
