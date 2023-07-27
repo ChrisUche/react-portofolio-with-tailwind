@@ -2,7 +2,7 @@ import { useState, useRef } from 'react'
 import { motion as m } from "framer-motion";
 import EarthCanvas from './EarthCanvas';
 import emailjs from "@emailjs/browser";
-import slideIn from '../../utils/motion';
+import { slideIn } from '../../utils/motion';
 
 
 // template_wymcfs5
