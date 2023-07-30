@@ -9,6 +9,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion as m } from 'framer-motion';
+import chrispro from '/public/chrispro.jpg';
+
 
 export default function Profile() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -48,7 +50,7 @@ export default function Profile() {
             <AiFillYoutube className="hover:scale-110 cursor-pointer hover:text-gray-800 dark:hover:text-slate-100" />
           </div>
           <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-2 md:h-96 md:w-96">
-            <Image src={deved} layout="fill" objectFit="cover" alt="Developer" />
+            <Image src={chrispro} layout="fill" objectFit="cover" alt="Developer" />
           </div>
         </div>
       </div>

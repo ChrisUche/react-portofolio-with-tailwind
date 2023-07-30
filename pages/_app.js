@@ -11,6 +11,12 @@ import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
 import deved from "/public/dev-ed-wave.png";
 import about from "/public/about.png";
+import web5 from '/public/web5.png';
+import web6 from '/public/web6.png';
+import plane from '/public/plane.png';
+import home from '/public/home.png';
+import contact from '/public/contact.jpg';
+
 
 
 function MyApp({ Component, pageProps, router }) {
@@ -47,31 +53,31 @@ const data = [
   {
     id: 1,
     name: 'Home',
-    img: deved,
+    img: home,
     link: "/"
   },
   {
     id: 2,
-    name: 'Work',
-    img: deved,
+    name: 'Projects',
+    img: web5,
     link: "/Project"
   },
   {
     id: 3,
     name: 'About',
-    img: about,
+    img: web6,
     link: "/About"
   },
   {
     id: 4,
     name: 'Contact',
-    img: deved,
+    img: contact,
     link: "/Contact"
   },
   {
     id: 5,
     name: 'Experience',
-    img: deved,
+    img: plane,
     link: "https://3dplane-chrisuche.vercel.app/"
   },
 ];
@@ -109,12 +115,12 @@ const data = [
               {/* <MdChevronLeft onClick={slideLeft} size={40} className='z-30'/> */}
               <m.div 
                 drag="x" 
-                dragConstraints={{ right:540, left: -650 }}
+                dragConstraints={{ right:380, left: -480 }}
                 id='slider' 
-                className='flex justify-around  rounded-t-md gap-5 transition-all w-full h-full overflow-hidden '>
+                className='flex justify-around  rounded-t-md gap-8 transition-all w-full h-full overflow-hidden '>
                 {data.map((item) => (
                 // Use the conditional check to open "Experience" link in a new tab
-                <div className='bg-gray-300 w-[280px] relative rounded-md' key={item.id}>
+                <div className='  w-[200px] relative rounded-md' key={item.id}>
                   <div className="text-center pt-2">
                     <p className="text-lg font-bold">{item.name}</p>
                   </div>
@@ -126,17 +132,19 @@ const data = [
                         src={item.img}
                         className='hover:scale-105 duration-300 cursor-pointer ease-in-out rounded-md'
                         alt=''
+                        objectFit="contain"
                       />
                     </a>
                   ) : (
                     <Link href={item.link}>
                       <a onClick={handleLinkClick}>
                         <Image
-                          width={277}
+                          width={237}
                           height={181}
                           src={item.img}
                           className='hover:scale-105 duration-300 cursor-pointer ease-in-out rounded-sm'
                           alt=''
+                          objectFit="contain"
                         />
                       </a>
                     </Link>
