@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import web1 from '/public/web1.png';
 import web2 from '/public/web2.png';
@@ -12,6 +12,8 @@ import { motion as m } from 'framer-motion';
 import Link from 'next/link';
 
 export default function PortfolioBody() {
+    // Define the isPhoneScreen variable and set its initial value
+    const [isPhoneScreen, setIsPhoneScreen] = useState(false);
   return (
     <m.div
       initial={{ y: '100%', opacity: 0 }}
@@ -20,28 +22,33 @@ export default function PortfolioBody() {
       transition={{ duration: 2, ease: 'easeOut' }}
       className="flex flex-col gap-10 py-10 px-16 lg:flex-row lg:flex-wrap"
     >
-      <Link href={'https://carshowcase-ox6b.vercel.app/'}>
-        <div className="basis-1/3 relative flex-1 hover:cursor-pointer">
-          <div className="flex z-10 absolute justify-between mb-1 hover:cursor-pointer">
-            <button className='bg-green-600 rounded-md p-2 '>
-              View site
-            </button>
-            <button className='bg-amber-300 rounded-md p-2 '>
-              Code repo
-            </button>
-          </div>
-        
-
+   <Link href={'https://carshowcase-ox6b.vercel.app/'}>
+        <div className="basis-1/3 relative flex-1 hover:cursor-pointer group">
           <Image
-            className="rounded-lg object-cover"
+            className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
             width={'100%'}
             height={'100%'}
             layout="responsive"
             src={web1}
             alt=""
           />
+
+          <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
+            <div className="flex z-10 justify-between space-x-4">
+              <button className='bg-green-600 rounded-md p-2'>
+                View site
+              </button>
+              <button className='bg-amber-300 rounded-md p-2'>
+                Code repo
+              </button>
+            </div>
+          </div>
         </div>
-      </Link>
+    </Link>
+
+
+
+
 
       <div className="basis-1/3 flex-1 hover:cursor-pointer">
         <Image
