@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import { useRouter } from 'next/router';
 import { MdChevronLeft, MdChevronRight} from 'react-icons/md';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import React, { useEffect, useRef, useState } from 'react'
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
@@ -95,9 +96,11 @@ const data = [
           exit={{ opacity: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
           whileHover={{ scale: 1.1, transition: { duration: 0, ease: "easeInOut" } }}
-          className={`z-30 shadow-zinc-900 fixed bottom-8 transform transition-transform w-12 h-12 bg-[#802200] hover:bg-opacity-80 hover:ease-in md:w-20 md:h-20 rounded-full`}
+          className={`z-30 shadow-zinc-900 fixed bottom-8 transform transition-transform w-12 h-12 flex justify-center items-center bg-[#802200] hover:bg-opacity-80 hover:ease-in md:w-20 md:h-20 rounded-full`}
           onClick={handleButtonClick}
         >
+          <GiHamburgerMenu size={20} className='z-30 text-stone-800  '/>
+          
         </m.button>
       </m.div>
 
