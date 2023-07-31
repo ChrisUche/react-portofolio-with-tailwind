@@ -6,7 +6,12 @@ import web3 from '/public/web3.png';
 import web4 from '/public/web4.png';
 import web5 from '/public/web5.png';
 import web6 from '/public/web6.png';
-import about from "/public/about.png";
+import car from '/public/carsite.png';
+import plane from "/public/plane.png";
+import loan from "/public/loan.png";
+import dashboard from "/public/dashboard.png";
+import todo from "/public/todo.png";
+import contactlist from "/public/contactlist.png";
 
 import { motion as m } from 'framer-motion';
 import Link from 'next/link';
@@ -22,13 +27,14 @@ export default function PortfolioBody() {
       transition={{ duration: 2, ease: 'easeOut' }}
       className="flex flex-col gap-10 py-10 px-16 lg:flex-row lg:flex-wrap"
     >
-        <div className="basis-1/3 relative flex-1 hover:cursor-pointer group">
+        <div className="basis-1/3 relative flex-1 bg-slate-300 hover:cursor-pointer group">
           <Image
             className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
             width={'100%'}
             height={'100%'}
             layout="responsive"
-            src={web1}
+            src={car}
+            objectFit="contain"
             alt=""
           />
 
@@ -46,41 +52,7 @@ export default function PortfolioBody() {
           </div>
         </div>
 
-
-
-
-
-      <div className="basis-1/3 flex-1 hover:cursor-pointer">
-        <Image
-          className="rounded-lg object-cover"
-          width={'100%'}
-          height={'100%'}
-          layout="responsive"
-          src={web2}
-          alt=""
-        />
-      </div>
-      <div className="basis-1/3 flex-1 hover:cursor-pointer">
-        <Image
-          className="rounded-lg object-cover"
-          width={'100%'}
-          height={'100%'}
-          layout="responsive"
-          src={web3}
-          alt=""
-        />
-      </div>
-      <div className="basis-1/3 flex-1 hover:cursor-pointer">
-        <Image
-          className="rounded-lg object-cover"
-          width={'100%'}
-          height={'100%'}
-          layout="responsive"
-          src={web4}
-          alt=""
-        />
-      </div>
-      <div className="basis-1/3 flex-1 hover:cursor-pointer">
+        <div className="basis-1/3 flex-1 hover:cursor-pointer">
         <Image
           className="rounded-lg object-cover"
           width={'100%'}
@@ -90,13 +62,55 @@ export default function PortfolioBody() {
           alt=""
         />
       </div>
+
       <div className="basis-1/3 flex-1 hover:cursor-pointer">
         <Image
           className="rounded-lg object-cover"
           width={'100%'}
           height={'100%'}
           layout="responsive"
-          src={web6}
+          src={plane}
+          alt=""
+        />
+      </div>
+      <div className="basis-1/3 flex-1 hover:cursor-pointer">
+        <Image
+          className="rounded-lg object-cover"
+          width={'100%'}
+          height={'100%'}
+          layout="responsive"
+          src={contactlist}
+          alt=""
+        />
+      </div>
+      <div className="basis-1/3 flex-1 hover:cursor-pointer">
+        <Image
+          className="rounded-lg object-cover"
+          width={'100%'}
+          height={'100%'}
+          layout="responsive"
+          src={loan}
+          alt=""
+        />
+      </div>
+      <div className="basis-1/3 flex-1 hover:cursor-pointer">
+        <Image
+          className="rounded-lg object-cover"
+          width={'100%'}
+          height={'100%'}
+          layout="responsive"
+          src={todo}
+          alt=""
+        />
+      </div>
+      <div className="basis-1/3 flex-1 hover:cursor-pointer">
+        <Image
+          className="rounded-lg object-cover"
+          width={'100%'}
+          height={'100%'}
+          layout="responsive"
+          src={dashboard}
+          objectFit="contain"
           alt=""
         />
       </div>
