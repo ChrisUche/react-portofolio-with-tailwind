@@ -40,12 +40,12 @@ export default function PortfolioBody() {
 
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
-               <a href={'https://carshowcase-ox6b.vercel.app/'} target="_blank" >
+               <a href={'https://carshowcase-ox6b.vercel.app/'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-green-600 rounded-md p-2'>
                     View site
                   </button>
                </a>
-               <a href={'https://github.com/ChrisUche/carshowcase'} target="_blank" >
+               <a href={'https://github.com/ChrisUche/carshowcase'} target="_blank" rel="noopener noreferrer">
                 <button className='bg-amber-300 rounded-md p-2'>
                   Code repo
                 </button>
@@ -66,12 +66,12 @@ export default function PortfolioBody() {
 
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
-               <a href={'https://3dplane.vercel.app/'} target="_blank">
+               <a href={'https://3dplane.vercel.app/'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-green-600 rounded-md p-2'>
                     View site
                   </button>
                </a>
-               <a href={'https://github.com/ChrisUche/3dplane'} target="_blank">
+               <a href={'https://github.com/ChrisUche/3dplane'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-amber-300 rounded-md p-2'>
                     Code repo
                   </button>
@@ -92,12 +92,12 @@ export default function PortfolioBody() {
 
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
-               <a href={''} target="_blank">
+               <a href={''} target="_blank" rel="noopener noreferrer">
                   <button className='bg-green-600 rounded-md p-2'>
                     View site
                   </button>
                </a>
-               <a href={'https://github.com/ChrisUche/deliverymobileapp'} target="_blank">
+               <a href={'https://github.com/ChrisUche/deliverymobileapp'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-amber-300 rounded-md p-2'>
                     Code repo
                   </button>
@@ -118,12 +118,12 @@ export default function PortfolioBody() {
 
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
-               <a href={'https://chrisuche.github.io/contactlistapp.io/'} target="_blank">
+               <a href={'https://chrisuche.github.io/contactlistapp.io/'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-green-600 rounded-md p-2'>
                     View site
                   </button>
                </a>
-               <a href={'https://github.com/ChrisUche/contactlistapp.io'} target="_blank">
+               <a href={'https://github.com/ChrisUche/contactlistapp.io'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-amber-300 rounded-md p-2'>
                     Code repo
                   </button>
@@ -144,12 +144,12 @@ export default function PortfolioBody() {
 
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
-               <a href={'https://chrisuche.github.io/loancalculator.io/'} target="_blank">
+               <a href={'https://chrisuche.github.io/loancalculator.io/'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-green-600 rounded-md p-2'>
                     View site
                   </button>
                </a>
-               <a href={'https://github.com/ChrisUche/loancalculator.io'} target="_blank">
+               <a href={'https://github.com/ChrisUche/loancalculator.io'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-amber-300 rounded-md p-2'>
                     Code repo
                   </button>
@@ -170,12 +170,12 @@ export default function PortfolioBody() {
 
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
-               <a href={'https://checklist-todoapp.netlify.app/'} target="_blank">
+               <a href={'https://checklist-todoapp.netlify.app/'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-green-600 rounded-md p-2'>
                     View site
                   </button>
                </a>
-               <a href={'https://github.com/ChrisUche/task-app'} target="_blank">
+               <a href={'https://github.com/ChrisUche/task-app'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-amber-300 rounded-md p-2'>
                     Code repo
                   </button>
@@ -196,12 +196,12 @@ export default function PortfolioBody() {
 
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
-               <a href={'https://chrisuche.github.io/ResponsiveAdminDashboard.github.io/'} target="_blank">
+               <a href={'https://chrisuche.github.io/ResponsiveAdminDashboard.github.io/'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-green-600 rounded-md p-2'>
                     View site
                   </button>
                </a>
-               <a href={'https://github.com/ChrisUche/ResponsiveAdminDashboard.github.io'} target="_blank">
+               <a href={'https://github.com/ChrisUche/ResponsiveAdminDashboard.github.io'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-amber-300 rounded-md p-2'>
                     Code repo
                   </button>
