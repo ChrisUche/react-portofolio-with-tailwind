@@ -27,7 +27,7 @@ export default function PortfolioBody() {
       transition={{ duration: 2, ease: 'easeOut' }}
       className="flex flex-col gap-10 py-10 px-16 lg:flex-row lg:flex-wrap"
     >
-        <div className="basis-1/3 relative flex-1 bg-slate-300 hover:cursor-pointer group">
+        <div className="basis-1/3 relative flex-1 bg-slate-200 hover:cursor-pointer group">
           <Image
             className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
             width={'100%'}
@@ -40,80 +40,175 @@ export default function PortfolioBody() {
 
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
-               <Link href={'https://carshowcase-ox6b.vercel.app/'}>
+               <a href={'https://carshowcase-ox6b.vercel.app/'} target="_blank" >
                   <button className='bg-green-600 rounded-md p-2'>
                     View site
                   </button>
-               </Link>
-              <button className='bg-amber-300 rounded-md p-2'>
-                Code repo
-              </button>
+               </a>
+               <a href={'https://github.com/ChrisUche/carshowcase'} target="_blank" >
+                <button className='bg-amber-300 rounded-md p-2'>
+                  Code repo
+                </button>
+               </a>
             </div>
           </div>
         </div>
 
-        <div className="basis-1/3 flex-1 hover:cursor-pointer">
-        <Image
-          className="rounded-lg object-cover"
-          width={'100%'}
-          height={'100%'}
-          layout="responsive"
-          src={web5}
-          alt=""
-        />
-      </div>
+        <div className="basis-1/3 relative flex-1 hover:cursor-pointer group">
+          <Image
+            className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
+            width={'100%'}
+            height={'100%'}
+            layout="responsive"
+            src={plane}
+            alt=""
+          />
 
-      <div className="basis-1/3 flex-1 hover:cursor-pointer">
-        <Image
-          className="rounded-lg object-cover"
-          width={'100%'}
-          height={'100%'}
-          layout="responsive"
-          src={plane}
-          alt=""
-        />
-      </div>
-      <div className="basis-1/3 flex-1 hover:cursor-pointer">
-        <Image
-          className="rounded-lg object-cover"
-          width={'100%'}
-          height={'100%'}
-          layout="responsive"
-          src={contactlist}
-          alt=""
-        />
-      </div>
-      <div className="basis-1/3 flex-1 hover:cursor-pointer">
-        <Image
-          className="rounded-lg object-cover"
-          width={'100%'}
-          height={'100%'}
-          layout="responsive"
-          src={loan}
-          alt=""
-        />
-      </div>
-      <div className="basis-1/3 flex-1 hover:cursor-pointer">
-        <Image
-          className="rounded-lg object-cover"
-          width={'100%'}
-          height={'100%'}
-          layout="responsive"
-          src={todo}
-          alt=""
-        />
-      </div>
-      <div className="basis-1/3 flex-1 hover:cursor-pointer">
-        <Image
-          className="rounded-lg object-cover"
-          width={'100%'}
-          height={'100%'}
-          layout="responsive"
-          src={dashboard}
-          objectFit="contain"
-          alt=""
-        />
-      </div>
+          <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
+            <div className="flex z-10 justify-between space-x-4">
+               <a href={'https://3dplane.vercel.app/'} target="_blank">
+                  <button className='bg-green-600 rounded-md p-2'>
+                    View site
+                  </button>
+               </a>
+               <a href={'https://github.com/ChrisUche/3dplane'} target="_blank">
+                  <button className='bg-amber-300 rounded-md p-2'>
+                    Code repo
+                  </button>
+               </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="basis-1/3 relative flex-1 hover:cursor-pointer group">
+          <Image
+            className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
+            width={'100%'}
+            height={'100%'}
+            layout="responsive"
+            src={web4}
+            alt=""
+          />
+
+          <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
+            <div className="flex z-10 justify-between space-x-4">
+               <a href={''} target="_blank">
+                  <button className='bg-green-600 rounded-md p-2'>
+                    View site
+                  </button>
+               </a>
+               <a href={'https://github.com/ChrisUche/deliverymobileapp'} target="_blank">
+                  <button className='bg-amber-300 rounded-md p-2'>
+                    Code repo
+                  </button>
+               </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="basis-1/3 relative flex-1 hover:cursor-pointer group">
+          <Image
+            className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
+            width={'100%'}
+            height={'100%'}
+            layout="responsive"
+            src={contactlist}
+            alt=""
+          />
+
+          <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
+            <div className="flex z-10 justify-between space-x-4">
+               <a href={'https://chrisuche.github.io/contactlistapp.io/'} target="_blank">
+                  <button className='bg-green-600 rounded-md p-2'>
+                    View site
+                  </button>
+               </a>
+               <a href={'https://github.com/ChrisUche/contactlistapp.io'} target="_blank">
+                  <button className='bg-amber-300 rounded-md p-2'>
+                    Code repo
+                  </button>
+               </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="basis-1/3 relative flex-1 hover:cursor-pointer group">
+          <Image
+            className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
+            width={'100%'}
+            height={'100%'}
+            layout="responsive"
+            src={loan}
+            alt=""
+          />
+
+          <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
+            <div className="flex z-10 justify-between space-x-4">
+               <a href={'https://chrisuche.github.io/loancalculator.io/'} target="_blank">
+                  <button className='bg-green-600 rounded-md p-2'>
+                    View site
+                  </button>
+               </a>
+               <a href={'https://github.com/ChrisUche/loancalculator.io'} target="_blank">
+                  <button className='bg-amber-300 rounded-md p-2'>
+                    Code repo
+                  </button>
+               </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="basis-1/3 relative flex-1 hover:cursor-pointer group">
+          <Image
+            className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
+            width={'100%'}
+            height={'100%'}
+            layout="responsive"
+            src={todo}
+            alt=""
+          />
+
+          <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
+            <div className="flex z-10 justify-between space-x-4">
+               <a href={'https://checklist-todoapp.netlify.app/'} target="_blank">
+                  <button className='bg-green-600 rounded-md p-2'>
+                    View site
+                  </button>
+               </a>
+               <a href={'https://github.com/ChrisUche/task-app'} target="_blank">
+                  <button className='bg-amber-300 rounded-md p-2'>
+                    Code repo
+                  </button>
+               </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="basis-1/3 relative flex-1 bg-slate-200 hover:cursor-pointer group">
+          <Image
+            className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
+            width={'100%'}
+            height={'100%'}
+            layout="responsive"
+            src={dashboard}
+            alt=""
+          />
+
+          <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
+            <div className="flex z-10 justify-between space-x-4">
+               <a href={'https://chrisuche.github.io/ResponsiveAdminDashboard.github.io/'} target="_blank">
+                  <button className='bg-green-600 rounded-md p-2'>
+                    View site
+                  </button>
+               </a>
+               <a href={'https://github.com/ChrisUche/ResponsiveAdminDashboard.github.io'} target="_blank">
+                  <button className='bg-amber-300 rounded-md p-2'>
+                    Code repo
+                  </button>
+               </a>
+            </div>
+          </div>
+        </div>
     </m.div>
   );
 }
