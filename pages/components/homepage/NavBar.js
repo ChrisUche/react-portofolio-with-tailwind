@@ -22,16 +22,14 @@ export default function NavBar() {
                   className=" cursor-pointer text-2xl"
                 />
               </li> */}
-              <Link href="/">
                 <li>
                   <a
                     className="hover:text-opacity-80 cursor-pointer bg-gradient-to-r from-cyan-500  to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                    href="http:///C:/Users/Uche%20Chris/Downloads/Uche%20Chris%20FrontEnd%20Resume.pdf"
+                    href={"http:///C:/Users/Uche%20Chris/Downloads/Uche%20Chris%20FrontEnd%20Resume.pdf"} target="_blank" rel="noopener noreferrer"
                   >
                     Resume
                   </a>
                 </li>
-              </Link>
               
             </ul>
           </nav>
