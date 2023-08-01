@@ -8,40 +8,26 @@ export default function ServiceBody() {
   return (
     <div className="lg:flex gap-10">
       <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-        <Image src={design} width={100} height={100} alt="Beautiful Designs" />
-        <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
-        <p className="py-2">
-          Creating elegant designs suited for your needs following core design theory.
-        </p>
-        <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-        <p className="text-gray-800 py-1">Photoshop</p>
-        <p className="text-gray-800 py-1">Illustrator</p>
-        <p className="text-gray-800 py-1">Figma</p>
-        <p className="text-gray-800 py-1">Indesign</p>
-      </div>
-      <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
         <Image src={code} width={100} height={100} alt="Code your dream project" />
-        <h3 className="text-lg font-medium pt-8 pb-2">Code your dream project</h3>
-        <p className="py-2">
-          Do you have an idea for your next great website? Let&apos;s make it a reality.
-        </p>
-        <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-        <p className="text-gray-800 py-1">Photoshop</p>
-        <p className="text-gray-800 py-1">Illustrator</p>
-        <p className="text-gray-800 py-1">Figma</p>
-        <p className="text-gray-800 py-1">Indesign</p>
+        <h4 className="py-4 text-teal-600">Proficient in</h4>
+        <p className="text-gray-800 py-1">React</p>
+        <p className="text-gray-800 py-1">React-Native</p>
+        <p className="text-gray-800 py-1">TypeScript</p>
+        <p className="text-gray-800 py-1">Next js</p>
+        <p className="text-gray-800 py-1">Tailwind</p>
+        <p className="text-gray-800 py-1">Redux</p>
+        <p className="text-gray-800 py-1">Git</p>
       </div>
       <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-        <Image src={consulting} width={100} height={100} alt="Consulting" />
-        <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
+        <Image src={design} width={100} height={100} alt="Beautiful Designs" />
+        <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Visuals</h3>
         <p className="py-2">
-          Are you interested in feedback for your current project? I can give you tips and tricks to level it up.
+          Creating data driven visuals.
         </p>
-        <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-        <p className="text-gray-800 py-1">Photoshop</p>
-        <p className="text-gray-800 py-1">Illustrator</p>
-        <p className="text-gray-800 py-1">Figma</p>
-        <p className="text-gray-800 py-1">Indesign</p>
+        <h4 className="py-4 text-teal-600">Data Visualization Tools I Use</h4>
+        <p className="text-gray-800 py-1"> Power BI</p>
+        <p className="text-gray-800 py-1">MS Excel</p>
+        <p className="text-gray-800 py-1">PowerPoint</p>
       </div>
     </div>
   );
