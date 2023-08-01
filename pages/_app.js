@@ -96,7 +96,7 @@ const data = [
           exit={{ opacity: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
           whileHover={{ scale: 1.1, transition: { duration: 0, ease: "easeInOut" } }}
-          className={`z-30 shadow-zinc-900 fixed bottom-8 transform transition-transform w-12 h-12 flex justify-center items-center bg-[#802200] hover:bg-opacity-80 hover:ease-in md:w-20 md:h-20 rounded-full`}
+          className={`z-30 shadow-zinc-900 fixed bottom-8 transform transition-transform w-12 h-12 flex justify-center items-center bg-gradient-to-r from-gray-500  to-teal-500 hover:bg-opacity-80 hover:ease-in md:w-20 md:h-20 rounded-full`}
           onClick={handleButtonClick}
         >
           <GiHamburgerMenu size={20} className='z-30 text-stone-800  '/>
@@ -135,7 +135,7 @@ const data = [
                         src={item.img}
                         className='hover:scale-105 duration-300 cursor-pointer ease-in-out rounded-md'
                         alt=''
-                        objectFit="contain"
+                        objectFit="cover"
                       />
                     </a>
                   ) : (
@@ -147,7 +147,7 @@ const data = [
                           src={item.img}
                           className='hover:scale-105 duration-300 cursor-pointer ease-in-out rounded-sm'
                           alt=''
-                          objectFit="contain"
+                          objectFit="cover"
                         />
                       </a>
                     </Link>
