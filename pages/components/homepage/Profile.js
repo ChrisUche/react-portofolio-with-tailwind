@@ -1,8 +1,7 @@
 import React from 'react';
 import {
-  AiFillTwitterCircle,
+  AiFillGithub,
   AiFillLinkedin,
-  AiFillYoutube,
 } from 'react-icons/ai';
 import deved from '/public/dev-ed-wave.png';
 import chrispro from '/public/chrispro.JPG';
@@ -38,15 +37,18 @@ export default function Profile() {
             </m.h2>
           </div>
 
-          <h3 className="text-2xl dark:text-white md:text-3xl">Developer and designer.</h3>
+          <h3 className="text-2xl dark:text-white md:text-3xl">Web and Mobile developer.</h3>
           <p className="text-md leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
             Freelancer providing services for programming and design content needs. Join me down below and let&apos;s get
             cracking!
           </p>
           <div className="text-5xl flex justify-center gap-16 py-1 text-gray-600 dark:text-gray-400">
-            <AiFillTwitterCircle className="hover:scale-110 cursor-pointer hover:text-gray-800 dark:hover:text-slate-100" />
-            <AiFillLinkedin className="hover:scale-110 cursor-pointer hover:text-gray-800 dark:hover:text-slate-100" />
-            <AiFillYoutube className="hover:scale-110 cursor-pointer hover:text-gray-800 dark:hover:text-slate-100" />
+            <a href={"https://github.com/ChrisUche"} target="_blank" rel="noopener noreferrer">
+               <AiFillGithub className="hover:scale-110 cursor-pointer hover:text-gray-800 dark:hover:text-slate-100" />
+            </a>
+            <a href={"https://www.linkedin.com/in/uche-chris-593037235/"} target="_blank" rel="noopener noreferrer">
+               <AiFillLinkedin className="hover:scale-110 cursor-pointer hover:text-gray-800 dark:hover:text-slate-100" />
+            </a>
           </div>
           <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-2 md:h-96 md:w-96">
             <Image src={chrispro} layout="fill" objectFit="cover" alt="Developer" />
