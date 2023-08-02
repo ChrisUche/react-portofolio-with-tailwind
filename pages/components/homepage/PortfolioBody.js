@@ -28,6 +28,14 @@ export default function PortfolioBody() {
       className="flex flex-col gap-10 py-10 px-16 lg:flex-row lg:flex-wrap"
     >
         <div className="basis-1/3 relative flex-1 bg-slate-200 hover:cursor-pointer group">
+          <div className='flex justify-around p-2'>
+            <div className='bg-orange-500 p-1 rounded-md'>React</div>
+            <div className='bg-gray-500 p-1 rounded-md'>API</div>
+            <div className='bg-cyan-700 p-1 rounded-md'>TypeScript</div>
+            <div className='bg-yellow-400 p-1 rounded-md'>Next js</div>
+            <div className='bg-green-500 p-1 rounded-md'>Tailwind</div>
+          </div>
+          <p className='text-xl font-bold font-sans flex justify-center items-center'>Car Rental App</p>
           <Image
             className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
             width={'100%'}
@@ -41,12 +49,12 @@ export default function PortfolioBody() {
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
                <a href={'https://carshowcase-ox6b.vercel.app/'} target="_blank" rel="noopener noreferrer">
-                  <button className='bg-green-600 rounded-md p-2'>
+                  <button className='bg-green-600 rounded-md p-2 font-bold font-sans text-white'>
                     View site
                   </button>
                </a>
                <a href={'https://github.com/ChrisUche/carshowcase'} target="_blank" rel="noopener noreferrer">
-                <button className='bg-amber-300 rounded-md p-2'>
+                <button className='bg-amber-300 rounded-md p-2 font-bold font-sans text-white'>
                   Code repo
                 </button>
                </a>
@@ -55,32 +63,46 @@ export default function PortfolioBody() {
         </div>
 
         <div className="basis-1/3 relative flex-1 hover:cursor-pointer group">
-          <Image
-            className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
-            width={'100%'}
-            height={'100%'}
-            layout="responsive"
-            src={plane}
-            alt=""
-          />
-
-          <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
-            <div className="flex z-10 justify-between space-x-4">
-               <a href={'https://3dplane.vercel.app/'} target="_blank" rel="noopener noreferrer">
-                  <button className='bg-green-600 rounded-md p-2'>
-                    View site
-                  </button>
-               </a>
-               <a href={'https://github.com/ChrisUche/3dplane'} target="_blank" rel="noopener noreferrer">
-                  <button className='bg-amber-300 rounded-md p-2'>
-                    Code repo
-                  </button>
-               </a>
+            <div className='flex justify-around p-2'>
+              <div className='bg-orange-500 p-1 rounded-md'>React</div>
+              <div className='bg-gray-500 p-1 rounded-md'>Three js</div>
+              <div className='bg-yellow-400 p-1 rounded-md'>Thre-fiber</div>
+              <div className='bg-green-500 p-1 rounded-md'>Tailwind</div>
             </div>
-          </div>
+            <p className='text-xl font-bold font-sans flex justify-center items-center'>Plane App</p>
+            <Image
+              className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
+              width={'100%'}
+              height={'100%'}
+              layout="responsive"
+              src={plane}
+              alt=""
+            />
+
+            <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
+              <div className="flex z-10 justify-between space-x-4">
+                <a href={'https://3dplane.vercel.app/'} target="_blank" rel="noopener noreferrer">
+                    <button className='bg-green-600 rounded-md p-2 font-bold font-sans text-white'>
+                      View site
+                    </button>
+                </a>
+                <a href={'https://github.com/ChrisUche/3dplane'} target="_blank" rel="noopener noreferrer">
+                    <button className='bg-amber-300 rounded-md p-2 font-bold font-sans text-white'>
+                      Code repo
+                    </button>
+                </a>
+              </div>
+            </div>
         </div>
 
         <div className="basis-1/3 relative flex-1 hover:cursor-pointer group">
+          <div className='flex justify-around p-2'>
+              <div className='bg-orange-500 p-1 rounded-md'>React-Native</div>
+              <div className='bg-gray-500 p-1 rounded-md'>Redux</div>
+              <div className='bg-yellow-400 p-1 rounded-md'>Next js</div>
+              <div className='bg-green-500 p-1 rounded-md'>Tailwind</div>
+          </div>
+            <p className='text-xl font-bold font-sans flex justify-center items-center'>Food delivery mobile app </p>
           <Image
             className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
             width={'100%'}
@@ -98,7 +120,7 @@ export default function PortfolioBody() {
                   </button>
                </a>
                <a href={'https://github.com/ChrisUche/deliverymobileapp'} target="_blank" rel="noopener noreferrer">
-                  <button className='bg-amber-300 rounded-md p-2'>
+                  <button className='bg-amber-300 rounded-md p-2 font-bold font-sans text-white'>
                     Code repo
                   </button>
                </a>
@@ -107,6 +129,12 @@ export default function PortfolioBody() {
         </div>
 
         <div className="basis-1/3 relative flex-1 hover:cursor-pointer group">
+          <div className='flex justify-around p-2'>
+              <div className='bg-orange-500 p-1 rounded-md'>Html</div>
+              <div className='bg-gray-500 p-1 rounded-md'>Css</div>
+              <div className='bg-green-500 p-1 rounded-md'>JavaScript</div>
+          </div>
+          <p className='text-xl font-bold font-sans flex justify-center items-center'>Car Rental App</p>
           <Image
             className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
             width={'100%'}
@@ -119,12 +147,12 @@ export default function PortfolioBody() {
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
                <a href={'https://chrisuche.github.io/contactlistapp.io/'} target="_blank" rel="noopener noreferrer">
-                  <button className='bg-green-600 rounded-md p-2'>
+                  <button className='bg-green-600 rounded-md p-2 font-bold font-sans text-white'>
                     View site
                   </button>
                </a>
                <a href={'https://github.com/ChrisUche/contactlistapp.io'} target="_blank" rel="noopener noreferrer">
-                  <button className='bg-amber-300 rounded-md p-2'>
+                  <button className='bg-amber-300 rounded-md p-2 font-bold font-sans text-white'>
                     Code repo
                   </button>
                </a>
@@ -133,6 +161,12 @@ export default function PortfolioBody() {
         </div>
 
         <div className="basis-1/3 relative flex-1 hover:cursor-pointer group">
+          <div className='flex justify-around p-2'>
+                <div className='bg-orange-500 p-1 rounded-md'>Html</div>
+                <div className='bg-gray-500 p-1 rounded-md'>Css</div>
+                <div className='bg-green-500 p-1 rounded-md'>JavaScript</div>
+          </div>
+          <p className='text-xl font-bold font-sans flex justify-center items-center'>Loan Calculator </p>
           <Image
             className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
             width={'100%'}
@@ -145,12 +179,12 @@ export default function PortfolioBody() {
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
                <a href={'https://chrisuche.github.io/loancalculator.io/'} target="_blank" rel="noopener noreferrer">
-                  <button className='bg-green-600 rounded-md p-2'>
+                  <button className='bg-green-600 rounded-md p-2 font-bold font-sans text-white'>
                     View site
                   </button>
                </a>
                <a href={'https://github.com/ChrisUche/loancalculator.io'} target="_blank" rel="noopener noreferrer">
-                  <button className='bg-amber-300 rounded-md p-2'>
+                  <button className='bg-amber-300 rounded-md p-2 font-bold font-sans text-white'>
                     Code repo
                   </button>
                </a>
@@ -159,6 +193,13 @@ export default function PortfolioBody() {
         </div>
 
         <div className="basis-1/3 relative flex-1 hover:cursor-pointer group">
+          <div className='flex justify-around p-2'>
+                <div className='bg-orange-500 p-1 rounded-md'>React</div>
+                <div className='bg-gray-500 p-1 rounded-md'>TypeScript</div>
+                <div className='bg-yellow-400 p-1 rounded-md'>Cypress</div>
+                <div className='bg-green-500 p-1 rounded-md'>Tailwind</div>
+            </div>
+            <p className='text-xl font-bold font-sans flex justify-center items-center'>Task app</p>
           <Image
             className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
             width={'100%'}
@@ -171,12 +212,12 @@ export default function PortfolioBody() {
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
                <a href={'https://checklist-todoapp.netlify.app/'} target="_blank" rel="noopener noreferrer">
-                  <button className='bg-green-600 rounded-md p-2'>
+                  <button className='bg-green-600 rounded-md p-2 font-bold font-sans text-white'>
                     View site
                   </button>
                </a>
                <a href={'https://github.com/ChrisUche/task-app'} target="_blank" rel="noopener noreferrer">
-                  <button className='bg-amber-300 rounded-md p-2'>
+                  <button className='bg-amber-300 rounded-md p-2 font-bold font-sans text-white'>
                     Code repo
                   </button>
                </a>
@@ -185,6 +226,12 @@ export default function PortfolioBody() {
         </div>
 
         <div className="basis-1/3 relative flex-1 bg-slate-200 hover:cursor-pointer group">
+          <div className='flex justify-around p-2'>
+                <div className='bg-orange-500 p-1 rounded-md'>Html</div>
+                <div className='bg-gray-500 p-1 rounded-md'>Css</div>
+                <div className='bg-green-500 p-1 rounded-md'>JavaScript</div>
+          </div>
+          <p className='text-xl font-bold font-sans flex justify-center items-center'>ResponsiveAdminDashboard</p>
           <Image
             className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
             width={'100%'}
@@ -197,12 +244,12 @@ export default function PortfolioBody() {
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
                <a href={'https://chrisuche.github.io/ResponsiveAdminDashboard.github.io/'} target="_blank" rel="noopener noreferrer">
-                  <button className='bg-green-600 rounded-md p-2'>
+                  <button className='bg-green-600 rounded-md p-2 font-bold font-sans text-white'>
                     View site
                   </button>
                </a>
                <a href={'https://github.com/ChrisUche/ResponsiveAdminDashboard.github.io'} target="_blank" rel="noopener noreferrer">
-                  <button className='bg-amber-300 rounded-md p-2'>
+                  <button className='bg-amber-300 rounded-md p-2 font-bold font-sans text-white'>
                     Code repo
                   </button>
                </a>
