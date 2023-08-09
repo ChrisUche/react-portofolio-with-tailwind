@@ -66,7 +66,7 @@ export default function PortfolioBody() {
             <div className='flex justify-around p-2'>
               <div className='bg-orange-500 p-1 rounded-md'>React</div>
               <div className='bg-gray-500 p-1 rounded-md'>Three js</div>
-              <div className='bg-yellow-400 p-1 rounded-md'>Thre-fiber</div>
+              <div className='bg-yellow-400 p-1 rounded-md'>Three-fiber</div>
               <div className='bg-green-500 p-1 rounded-md'>Tailwind</div>
             </div>
             <p className='text-xl font-bold font-sans flex justify-center items-center'>Plane App</p>
@@ -99,7 +99,6 @@ export default function PortfolioBody() {
           <div className='flex justify-around p-2'>
               <div className='bg-orange-500 p-1 rounded-md'>React-Native</div>
               <div className='bg-gray-500 p-1 rounded-md'>Redux</div>
-              <div className='bg-yellow-400 p-1 rounded-md'>Next js</div>
               <div className='bg-green-500 p-1 rounded-md'>Tailwind</div>
           </div>
             <p className='text-xl font-bold font-sans flex justify-center items-center'>Food delivery mobile app </p>
@@ -134,7 +133,7 @@ export default function PortfolioBody() {
               <div className='bg-gray-500 p-1 rounded-md'>Css</div>
               <div className='bg-green-500 p-1 rounded-md'>JavaScript</div>
           </div>
-          <p className='text-xl font-bold font-sans flex justify-center items-center'>Car Rental App</p>
+          <p className='text-xl font-bold font-sans flex justify-center items-center'>Contact List App</p>
           <Image
             className={`rounded-lg object-cover transition-opacity ${isPhoneScreen ? 'opacity-100' : 'opacity-90'} group-hover:opacity-100`}
             width={'100%'}
