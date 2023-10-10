@@ -5,6 +5,7 @@ import Link from "next/link";
 
 
 
+
 export default function NavBar() {
     const [darkMode, setDarkMode] = useState(false);
 
@@ -24,10 +25,10 @@ export default function NavBar() {
               </li> */}
                 <li>
                   <a
-                    className="hover:text-opacity-80 cursor-pointer bg-gradient-to-r from-cyan-500  to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                    href={"http:///C:/Users/Uche%20Chris/Downloads/Uche%20Chris%20FrontEnd%20Resume.pdf"} target="_blank" rel="noopener noreferrer"
+                    
+                    href={"/public/Resume.pdf"} download="UcheChrisResume.pdf" target="_blank" rel="noopener noreferrer"
                   >
-                    Resume
+                   <p className="hover:text-opacity-80 cursor-pointer bg-gradient-to-r from-cyan-500  to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8">Resume</p> 
                   </a>
                 </li>
               
