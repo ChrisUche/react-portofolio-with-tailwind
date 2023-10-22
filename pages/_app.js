@@ -17,6 +17,8 @@ import web6 from '/public/web6.png';
 import plane from '/public/plane.png';
 import home from '/public/home.png';
 import contact from '/public/contact.jpg';
+import { Analytics } from '@vercel/analytics/react'; //vercel analytics
+
 
 
 
@@ -84,6 +86,7 @@ const data = [
 ];
   return (<>
       <NavBar />
+      <Analytics />
       <div className={` ${isMenuOpen ? 'menu-open opacity-50' : ''}`} style={{ transform: isMenuOpen ? '' : '' }}>
       <AnimatePresence >
         <Component key={router.pathname} {...pageProps} />
