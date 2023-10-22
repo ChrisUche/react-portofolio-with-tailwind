@@ -14,6 +14,7 @@ export default function ServiceBody() {
         <p className="text-gray-800 py-1">React-Native</p>
         <p className="text-gray-800 py-1">TypeScript</p>
         <p className="text-gray-800 py-1">Next js</p>
+        <p className="text-gray-800 py-1">Firebase</p>
         <p className="text-gray-800 py-1">Tailwind</p>
         <p className="text-gray-800 py-1">Redux</p>
         <p className="text-gray-800 py-1">Git</p>
