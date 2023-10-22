@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.78.1",
     "@react-three/fiber": "^8.13.4",
+    "@vercel/analytics": "^1.1.1",
     "emailjs-com": "^3.2.0",
     "firebase": "^9.10.0",
     "framer-motion": "^10.12.16",
