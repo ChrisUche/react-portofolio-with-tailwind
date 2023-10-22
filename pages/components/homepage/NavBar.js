@@ -26,7 +26,7 @@ export default function NavBar() {
                 <li>
                   <a
                     
-                    href="https://drive.google.com/file/d/13997Q-auR4ly76qtEwFhWRmzsYu3SGx7/view?usp=drive_link" download="UcheChrisResume.pdf"  target="_blank" rel="noopener noreferrer"
+                    href="https://drive.google.com/file/d/14xGExGmaKYBI4H0zE0vabb7HD8sJcC0N/view?usp=share_link" download="UcheChrisResume.pdf"  target="_blank" rel="noopener noreferrer"
                   >
                    <p className="hover:text-opacity-80 cursor-pointer bg-gradient-to-r from-cyan-500  to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8">Resume</p> 
                   </a>
