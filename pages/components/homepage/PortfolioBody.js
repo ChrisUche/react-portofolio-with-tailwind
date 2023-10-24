@@ -154,7 +154,7 @@ export default function PortfolioBody() {
                     Code repo
                   </button>
                </a>
-               <a href={'https://github.com/ChrisUche/deliverymobileapp'} target="_blank" rel="noopener noreferrer">
+               <a href={'https://drive.google.com/file/d/1f8jkmRyQWXFdSeFzMCotrI6eE9zVywbp/view?usp=sharing'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-red-500 rounded-md p-2 font-bold font-sans text-white'>
                     View Video 
                   </button>
