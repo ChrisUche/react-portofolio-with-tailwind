@@ -3,8 +3,8 @@ import Image from 'next/image';
 import web1 from '/public/web1.png';
 import web2 from '/public/web2.png';
 import web3 from '/public/web3.png';
-import web4 from '/public/web4.png';
-import web5 from '/public/web5.png';
+import web4 from '/public/Expence.png';
+import web5 from '/public/delivery.png';
 import web6 from '/public/web6.png';
 import car from '/public/carsite.png';
 import plane from "/public/plane.png";
@@ -138,7 +138,7 @@ export default function PortfolioBody() {
             width={'100%'}
             height={'100%'}
             layout="responsive"
-            src={web4}
+            src={web5}
             alt=""
           />
 
@@ -146,12 +146,17 @@ export default function PortfolioBody() {
             <div className="flex z-10 justify-between space-x-4">
                <a href={''} target="_blank" rel="noopener noreferrer">
                   <button className='bg-green-600 rounded-md p-2'>
-                    View site
+                    View Apk
                   </button>
                </a>
                <a href={'https://github.com/ChrisUche/deliverymobileapp'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-amber-300 rounded-md p-2 font-bold font-sans text-white'>
                     Code repo
+                  </button>
+               </a>
+               <a href={'https://github.com/ChrisUche/deliverymobileapp'} target="_blank" rel="noopener noreferrer">
+                  <button className='bg-red-500 rounded-md p-2 font-bold font-sans text-white'>
+                    View Video 
                   </button>
                </a>
             </div>
