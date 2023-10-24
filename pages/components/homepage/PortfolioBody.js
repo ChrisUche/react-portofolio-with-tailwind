@@ -45,9 +45,9 @@ export default function PortfolioBody() {
 
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300">
             <div className="flex z-10 justify-between space-x-4">
-               <a href={''} target="_blank" rel="noopener noreferrer">
+               <a href={'https://drive.google.com/file/d/1Gpasc-09k-YHsdkR5VOQGwifUaQU43Hp/view?usp=sharing'} target="_blank" rel="noopener noreferrer">
                   <button className='bg-green-600 rounded-md p-2'>
-                    View site
+                    View video
                   </button>
                </a>
                <a href={'https://github.com/ChrisUche/Expence'} target="_blank" rel="noopener noreferrer">
